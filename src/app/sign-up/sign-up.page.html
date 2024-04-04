@@ -1,0 +1,39 @@
+<ion-header mode="md" translucent>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">WILDLIFE ALERT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+<div class="login-container">
+  <div class="welcome-text">
+    <h1>Sign Up</h1>
+  </div>
+
+  <ion-item lines="none">
+    <ion-label position="stacked">Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label position="stacked">Create Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label position="stacked">Confirm Password</ion-label>
+    <ion-input type="password" [(ngModel)]="confirmPassword" required></ion-input>
+  </ion-item>
+
+  <ion-button class="custom-button" (click)="signup()" expand="block">Sign Up</ion-button>
+
+  <br>
+
+  <div class="login-link">
+    <a href="#">Already have an account? Log In</a>
+  </div>
+
+</div>
+</ion-content>
+
