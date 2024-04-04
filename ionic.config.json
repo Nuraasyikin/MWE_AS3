@@ -1,0 +1,7 @@
+{
+  "name": "Wildlife Alert App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
