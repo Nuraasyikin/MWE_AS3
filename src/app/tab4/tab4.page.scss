@@ -1,0 +1,25 @@
+/* Colors */
+$primary: #4CAF50; // Green for buttons
+
+/* Content */
+.settings-content {
+  padding: 20px;
+}
+
+/* List */
+ion-list {
+  margin-top: 20px;
+}
+
+/* List Items */
+ion-item {
+  --ion-background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/** Ionic CSS Variables **/
+:root {
+    --ion-color-custom: #458A74;
+    // other color variables...
+  }
