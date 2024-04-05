@@ -1,0 +1,22 @@
+/* Colors */
+$primary: #4CAF50; // Green for buttons (optional)
+
+/* Card */
+ion-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+ion-card-title {
+  font-weight: bold;
+}
+
+/* Button Positioning */
+ion-button {
+  /* Adjust positioning values as needed */
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
