@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'feedback',
+    loadChildren: () => import('./feedback/feedback.module').then( m => m.FeedbackPageModule)
+  },
+  {
+    path: 'animals-archive',
+    loadChildren: () => import('./animals-archive/animals-archive.module').then( m => m.AnimalsArchivePageModule)
+  },
 
 ];
 @NgModule({
