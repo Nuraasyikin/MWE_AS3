@@ -1,13 +1,42 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>feedback</ion-title>
+<ion-header [translucent]="true" mode="md">
+  <ion-toolbar class="custom-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button style="color: white;" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: white;">FEEDBACK</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">feedback</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen class="feedback-content">
+  <ion-card style="border-radius: 20px;">
+    <ion-card-header>
+      <ion-card-title>Feedback Form</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item lines="full">
+        <ion-label position="floating">Name</ion-label>
+        <ion-input [(ngModel)]="name"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="email" type="email"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Subject</ion-label>
+        <ion-input [(ngModel)]="subject"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Messages</ion-label>
+        <ion-textarea [(ngModel)]="feedback" rows="6"></ion-textarea>
+      </ion-item>
+
+      <ion-button expand="block" class="custom-button" style="text-transform: none;" (click)="submitFeedback()">Submit</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+

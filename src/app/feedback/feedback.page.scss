@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+ion-button {
+    --background: #38886B;
+}
+
+ion-toolbar.custom-toolbar {
+    --background: #2D5845;
+}
+
+ion-title {
+    font-family: 'Monomaniac One', monospace;
+    font-size: 24px;
+}
+
+ion-card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
