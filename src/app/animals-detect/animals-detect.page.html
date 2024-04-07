@@ -1,13 +1,27 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>animals-detect</ion-title>
+  <ion-toolbar class="custom-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button style="color: white;" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: white;">ANIMALS-DETECT</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="custom-background">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">animals-detect</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card class="custom-card">
+    <ion-img src="assets/dogs.jpg" alt="Image of a dogs"></ion-img>
+    <ion-card-content>
+      <ion-card-title>
+        Wildlife Detected!
+        <ion-icon name="paw"></ion-icon>
+      </ion-card-title>
+      <p>Animals been detected at 14.00 at your house. Please proceed with caution!</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
