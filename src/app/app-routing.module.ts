@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'animals-calendar',
     loadChildren: () => import('./animals-calendar/animals-calendar.module').then( m => m.AnimalsCalendarPageModule)
   },
+  {
+    path: 'animals-diary',
+    loadChildren: () => import('./animals-diary/animals-diary.module').then( m => m.AnimalsDiaryPageModule)
+  },
 
 ];
 @NgModule({
