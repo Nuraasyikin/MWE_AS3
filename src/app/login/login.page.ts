@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  email: any;
-  password: any;
+  email: string = '';
+  password: string = '';
+  defaultEmail = 'user@gmail.com'; // Replace with your desired default email
+  defaultPassword = '12345678'; // Replace with your desired default password
+
+  constructor(private router: Router) { }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
   login() {
     // Implement login logic here
@@ -15,12 +23,20 @@ export class LoginPage implements OnInit {
     console.log('Email:', this.email);
     console.log('Password:', this.password);
 
+    if (this.email === this.defaultEmail && this.password === this.defaultPassword) {
+      // Login successful! Navigate to desired page
+      this.router.navigateByUrl('/tabs/tab1'); // Replace with the page you want to access
+    } else {
+      // Handle invalid login (e.g., display error message)
+      console.error('Invalid email or password');
+    }
+  }
+
     
   }
 
-  constructor() { }
+  
 
-  ngOnInit() {
-  }
 
-}
+
+
