@@ -1,17 +1,55 @@
-<ion-header [translucent]="true">
+<ion-header translucent mode="md">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-buttons slot="start">
+      <ion-button (click)="openAnimalArchive()">
+        <ion-icon name="archive" color="white"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      WILDLIFE ALERT
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openFeedbackForm()">
+        <ion-icon name="chatbox-ellipses" color="white"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<br>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true" style="display: flex; flex-direction: column; justify-content: space-between;">
+  <ion-card style="margin-bottom: 200px; border-radius: 20px">
+    <ion-card-header>
+      <ion-card-title class="fonttype">Wildlife Detected!</ion-card-title>
+      <ion-card-subtitle class="fonttype" style="display: flex; justify-content: space-between;">
+        This is a notification alert. Animals has been detected in your area. Proceed with caution!
+        <ion-icon name="paw" style="font-size: 50px;"></ion-icon>
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  
+
+  <div style="margin-top: auto;">
+    <ion-card style="border-radius: 20px">
+      <ion-card-content>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <p id="title">Today's Alert</p>
+          <ion-icon name="paw" style="font-size: 30px;"></ion-icon>
+        </div>
+        <ion-grid style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+          <ion-button expand="full" shape="round" class="custom-button" style="width: 80%; height: 50px;" (click)="openAnimals()">
+            <ion-icon name="paw-outline" style="margin-right: 10px;"></ion-icon> Animals Detect
+          </ion-button>
+          <ion-button expand="full" shape="round" class="custom-button" style="width: 80%; height: 50px;" (click)="openCalendar()">
+            <ion-icon name="calendar-outline" style="margin-right: 10px;"></ion-icon> Animals Calendar
+          </ion-button>
+          <ion-button expand="full" shape="round" class="custom-button" style="width: 80%; height: 50px;" (click)="openDiary()">
+            <ion-icon name="book-outline" style="margin-right: 10px;"></ion-icon> Animals Diary
+          </ion-button>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

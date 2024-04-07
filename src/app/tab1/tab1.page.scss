@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+ion-content {
+    --background: url('/assets/home-bg.jpg') no-repeat center center / cover;
+    padding: 20px;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: var(--ion-color-light); /* Adjust text color to ensure visibility */
+    --box-shadow: none;
+}
+
+ion-title {
+    font-family: 'Monomaniac One', monospace;
+    color: rgb(255, 255, 255);
+}
+
+ion-button {
+    --background: #38886B;
+}
+
+.custom-button {
+    text-transform: none;
+    font-size: 14px;
+}
+
+#title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.fonttype {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+  
+
+  
+
+  
