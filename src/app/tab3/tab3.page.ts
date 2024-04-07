@@ -7,7 +7,7 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-  location = "Golden Gate Park, San Francisco";
+  location = "Bandar Seri Begawan, Brunei Darussalam";
   date = new Date().toLocaleDateString();
   time = new Date().toLocaleTimeString();
 
