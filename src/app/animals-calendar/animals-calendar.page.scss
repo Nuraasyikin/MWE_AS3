@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+ion-title {
+    font-family: 'Monomaniac One', monospace;
+    font-size: 20px;
+}
+
+ion-toolbar.custom-toolbar {
+    --background: #2D5845;
+}
+
+.bold {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.custom-card {
+    border-radius: 20px;
+}
+
+div.highlighted {
+    background-color: #2D5845;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}

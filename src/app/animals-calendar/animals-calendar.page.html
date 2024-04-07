@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>animals-calendar</ion-title>
+  <ion-toolbar class="custom-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button style="color: white;" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: white;">ANIMALS CALENDAR TRACKING</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,4 +13,86 @@
       <ion-title size="large">animals-calendar</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card class="custom-card">
+    <ion-card-header>
+      <ion-card-title style="text-align: center;">April 2024</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="bold">Sun</ion-col>
+          <ion-col class="bold">Mon</ion-col>
+          <ion-col class="bold">Tue</ion-col>
+          <ion-col class="bold">Wed</ion-col>
+          <ion-col class="bold">Thu</ion-col>
+          <ion-col class="bold">Fri</ion-col>
+          <ion-col class="bold">Sat</ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col>
+            <div class="highlighted">1</div>
+          </ion-col>
+          <ion-col>2</ion-col>
+          <ion-col>3</ion-col>
+          <ion-col>4</ion-col>
+          <ion-col>5</ion-col>
+          <ion-col>6</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>7</ion-col>
+          <ion-col>8</ion-col>
+          <ion-col>9</ion-col>
+          <ion-col>10</ion-col>
+          <ion-col>11</ion-col>
+          <ion-col>12</ion-col>
+          <ion-col>13</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>14</ion-col>
+          <ion-col>15</ion-col>
+          <ion-col>16</ion-col>
+          <ion-col>17</ion-col>
+          <ion-col>18</ion-col>
+          <ion-col>19</ion-col>
+          <ion-col>20</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>21</ion-col>
+          <ion-col>22</ion-col>
+          <ion-col>23</ion-col>
+          <ion-col>24</ion-col>
+          <ion-col>25</ion-col>
+          <ion-col>25</ion-col>
+          <ion-col>26</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>27</ion-col>
+          <ion-col>28</ion-col>
+          <ion-col>29</ion-col>
+          <ion-col>30</ion-col>
+          <ion-col></ion-col>
+          <ion-col></ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <br>
+
+  <ion-card class="custom-card">
+    <ion-card-header>
+      <ion-card-title>Animal's Detect</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-icon name="paw"></ion-icon>
+      1st April 2024
+      <br>
+      Animal's Detected at 14:00
+    </ion-card-content>
+  </ion-card>
 </ion-content>
