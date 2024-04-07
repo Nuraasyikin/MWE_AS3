@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+ion-title {
+    font-family: 'Monomaniac One', monospace;
+    font-size: 24px;
+}
+
+ion-card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.archive-content {
+    --background: url('/assets/start-bg.jpg') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.custom-card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+.custom-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
