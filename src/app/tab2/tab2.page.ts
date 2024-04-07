@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 export class Tab2Page {
 
   alerts = [
-    { location: 'Location 1', time: 'Time 1' },
-    { location: 'Location 1', time: 'Time 1' }
+    { location: 'Kg. Batang Tuau', time: '12:00' },
+    { location: 'Kg. Puni', time: '15:00' }
     // other alerts...
   ];
 
@@ -21,6 +21,6 @@ export class Tab2Page {
   }
 
   reloadPastNotifications() {
-    this.alerts.push({ location: 'Past Location', time: 'Past Time' });
+    this.alerts.push({ location: 'Bandar Seri Begawan', time: '01:00' });
   }
 }
