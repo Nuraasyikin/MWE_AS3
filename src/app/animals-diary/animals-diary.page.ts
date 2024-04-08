@@ -6,6 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./animals-diary.page.scss'],
 })
 export class AnimalsDiaryPage implements OnInit {
+  showForm = false;
+  day = '';
+  entries: { day: string }[] = [];
+
+  addEntry() {
+    console.log('Day:', this.day);
+    this.entries.push({ day: this.day });
+    this.day = '';
+    this.showForm = false;
+  }
 
   constructor() { }
 

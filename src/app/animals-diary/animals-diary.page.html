@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>animals-diary</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="showForm = !showForm">Add</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -10,4 +13,30 @@
       <ion-title size="large">animals-diary</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card *ngIf="showForm">
+    <ion-card-header>
+      <ion-card-title>Write your diary</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Today's Day</ion-label>
+        <ion-input type="text" [(ngModel)]="day"></ion-input>
+      </ion-item>
+      <ion-button expand="full" (click)="addEntry()">Done</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let entry of entries">
+
+    <ion-card-content>
+      Today's day
+    </ion-card-content>
+    <ion-card-header>
+      <ion-card-title>{{ entry?.day }}</ion-card-title>
+    </ion-card-header>
+
+
+  </ion-card>
 </ion-content>
