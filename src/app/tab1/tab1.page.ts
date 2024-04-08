@@ -22,10 +22,9 @@ openCalendar() {
   this.router.navigate(['/animals-calendar']);
 }
 
-  openDiary() {
-    // Implement logic to open the Animals Diary page here
-    console.log('Animals Diary button clicked!');
-  }
+openDiary() {
+  this.router.navigate(['/animals-diary']);
+}
 
 
 
