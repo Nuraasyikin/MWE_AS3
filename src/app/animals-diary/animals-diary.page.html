@@ -1,8 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>animals-diary</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ANIMALS DIARY</ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="showForm = !showForm">Add</ion-button>
+      <ion-button (click)="showForm = !showForm">
+        <ion-icon style="font-size: 20px;" name="add-circle"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
