@@ -1,12 +1,10 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="custom-toolbar">
     <ion-buttons slot="start">
-      <ion-button (click)="goToTab1()">
-        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
-      </ion-button>
+      <ion-back-button style="color: white;" defaultHref="/tabs/tab1"></ion-back-button>
     </ion-buttons>
-    <ion-title>
-      Notifications
+    <ion-title style="color: white;">
+      NOTIFICATIONS
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -25,7 +23,7 @@
     </ion-card-content>
   </ion-card>
   
-  <ion-button expand="full" shape="round" color="success" (click)="reloadPastNotifications()" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);">
+  <ion-button expand="full" shape="round" class="custom-button" (click)="reloadPastNotifications()" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);">
     Reload Past Notifications
   </ion-button>
 </ion-content>

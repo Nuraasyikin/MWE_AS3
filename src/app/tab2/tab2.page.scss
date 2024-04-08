@@ -1,5 +1,6 @@
-/* Colors */
-$primary: #4CAF50; // Green for buttons (optional)
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
 
 /* Card */
 ion-card {
@@ -19,4 +20,18 @@ ion-button {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+ion-title {
+  font-family: 'Monomaniac One', monospace;
+  font-size: 24px;
+}
+
+ion-toolbar.custom-toolbar {
+  --background: #2D5845;
+}
+
+ion-button {
+  --background: #719754;
+  text-transform: none;
 }
