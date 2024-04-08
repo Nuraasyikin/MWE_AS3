@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
@@ -10,23 +9,16 @@ export class Tab3Page {
   location = "Bandar Seri Begawan, Brunei Darussalam";
   date = new Date().toLocaleDateString();
   time = new Date().toLocaleTimeString();
+  showForm = false;
+  newComment = '';
+  entries: { comment: string }[] = [];
 
-  showModal = false;
-  experience = '';
-  photo = '';
+  constructor() {}
 
-  constructor(private modalCtrl: ModalController) {}
-
-  openModal() {
-    this.showModal = true;
+  addEntry() {
+    this.entries.push({ comment: this.newComment });
+    this.newComment = '';
+    this.showForm = false;
   }
-
-  closeModal() {
-    this.showModal = false;
-  }
-
-  submitForm() {
-    console.log(this.experience, this.photo);
-    this.closeModal();
-  }
+  
 }

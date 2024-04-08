@@ -1,5 +1,16 @@
-/* Colors */
-$primary: #4CAF50; // Green for buttons
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+
+ion-title {
+  font-family: 'Monomaniac One', monospace;
+  font-size: 24px;
+}
+
+ion-button {
+  --background: #38886B;
+  text-transform: none;
+}
 
 /* Content */
 .encounter-content {
@@ -25,9 +36,8 @@ ion-img {
   margin-bottom: 10px;
 }
 
-/* Button */
-ion-button {
-  --ion-background-color: $primary;
-  --ion-color-base: white;
-  border-radius: 10px;
+.custom-text {
+  font-family: 'Open Sans', sans-serif;
 }
+
+
